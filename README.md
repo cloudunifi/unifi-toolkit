@@ -15,12 +15,12 @@ Download the latest release from the [Releases](https://github.com/cloudunifi/un
 
 | Platform | File |
 |----------|------|
-| macOS Desktop App (Apple Silicon) | `UniFi-Adopt-x.x.x-mac-arm64.dmg` |
-| macOS CLI (Apple Silicon) | `unifi-adopt-macos-arm64` |
-| macOS CLI (Intel) | `unifi-adopt-macos-amd64` |
-| Linux CLI (x86_64) | `unifi-adopt-linux-amd64` |
-| Linux CLI (ARM64) | `unifi-adopt-linux-arm64` |
-| Windows CLI (x86_64) | `unifi-adopt-windows-amd64.exe` |
+| macOS Desktop App (Apple Silicon) | `UniFi-Toolkit-x.x.x-mac-arm64.dmg` |
+| macOS CLI (Apple Silicon) | `unifi-toolkit-macos-arm64` |
+| macOS CLI (Intel) | `unifi-toolkit-macos-amd64` |
+| Linux CLI (x86_64) | `unifi-toolkit-linux-amd64` |
+| Linux CLI (ARM64) | `unifi-toolkit-linux-arm64` |
+| Windows CLI (x86_64) | `unifi-toolkit-windows-amd64.exe` |
 
 ## Installation
 
@@ -32,13 +32,13 @@ Download the binary for your architecture. Both are signed and notarized — run
 
 ### Linux
 ```bash
-chmod +x unifi-adopt-linux-amd64
-./unifi-adopt-linux-amd64
+chmod +x unifi-toolkit-linux-amd64
+./unifi-toolkit-linux-amd64
 ```
 If device discovery fails, check your firewall rules (`sudo iptables -L -n | grep 10001`). If you have Docker or VPN interfaces, use `--subnet` to specify your LAN subnet explicitly.
 
 ### Windows
-Download and run `unifi-adopt-windows-amd64.exe`. On first run, Windows SmartScreen may show a warning. Click **More info > Run anyway** to proceed. This is a one-time prompt.
+Download and run `unifi-toolkit-windows-amd64.exe`. On first run, Windows SmartScreen may show a warning. Click **More info > Run anyway** to proceed. This is a one-time prompt.
 
 If your firewall blocks device discovery, try running as Administrator.
 
@@ -46,16 +46,16 @@ If your firewall blocks device discovery, try running as Administrator.
 
 ```bash
 # Interactive TUI
-./unifi-adopt
+./unifi-toolkit
 
 # Non-interactive adoption
-./unifi-adopt --run --subnet 192.168.1.0/24 --controller 192.168.1.100 --port 8080
+./unifi-toolkit --run --subnet 192.168.1.0/24 --controller 192.168.1.100 --port 8080
 
 # Non-interactive troubleshooting
-./unifi-adopt --run --troubleshoot --subnet 192.168.1.0/24
+./unifi-toolkit --run --troubleshoot --subnet 192.168.1.0/24
 ```
 
-Run `./unifi-adopt --help` for all options.
+Run `./unifi-toolkit --help` for all options.
 
 ---
 
