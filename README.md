@@ -57,7 +57,7 @@ All binaries are available on the [Releases](https://github.com/cloudunifi/unifi
 ## Platform Notes
 
 ### macOS CLI
-Both binaries are signed and notarized — run directly from Terminal.
+Both binaries are signed and notarized by Apple — run directly from Terminal.
 
 ### Linux
 ```bash
@@ -67,7 +67,7 @@ chmod +x unifi-toolkit-linux-amd64
 If device discovery fails, check your firewall rules (`sudo iptables -L -n | grep 10001`). If you have Docker or VPN interfaces, use `--subnet` to specify your LAN subnet explicitly.
 
 ### Windows
-Download and run `unifi-toolkit-windows-amd64.exe`. On first run, Windows SmartScreen may show a warning. Click **More info > Run anyway** to proceed. This is a one-time prompt.
+Download and run `unifi-toolkit-windows-amd64.exe`. The binary is code-signed via Microsoft Azure Trusted Signing — no SmartScreen warnings.
 
 ## CLI Usage
 
